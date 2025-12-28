@@ -1,0 +1,16 @@
+import random
+value=random.randint(1,100)
+number=0
+count=0
+
+
+while(number!=value):
+    count+=1
+    number=int(input("Enter your guess:"))
+    if(number<value):
+        print("Enter Higher Number!")
+    elif(number>value):
+        print("Enter Lower Number!")
+    else:
+        print("Your Guess is correct!")
+        print("Your Count=",count)
